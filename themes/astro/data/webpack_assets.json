@@ -1,0 +1,22 @@
+{
+  "app": {
+    "js": "js/app.d15d5c7ef37e4b5f71e4.js",
+    "css": "app.fc0cc443d3963c4277b4.css"
+  },
+  "": {
+    "woff": [
+      "6fc4007d23602b6fbda4.woff?5813790c1ebd573b51a03ec84367082a",
+      "8a517f2712bba8249913.woff",
+      "1cac021c57317117b34a.woff",
+      "437d925ba931d4fea019.woff",
+      "80d4ebae850614ffafc1.woff"
+    ],
+    "woff2": [
+      "354f56c363f56e62b0bc.woff2?5813790c1ebd573b51a03ec84367082a",
+      "11dd408106172418b69a.woff2",
+      "3525fd90c061dc5315d1.woff2",
+      "111af58d9e269f61589f.woff2",
+      "7b253bf0370283d6ea62.woff2"
+    ]
+  }
+}

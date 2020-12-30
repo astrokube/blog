@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+<html class="h-100" lang="{{ $.Site.LanguageCode | default "en" }}">
+  {{- partial "head.html" . -}}
+  <body class="d-flex flex-column h-100 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
+
+    {{ block "header" . }}{{ partial "header.html" .}}{{ end }}
+    <main class="flex-shrink-0">
+      <div class="container">
+        {{ block "main" . }}{{ end }}
+      </div>
+    </main>
+    {{ block "footer" . }}{{ partialCached "footer.html" . }}{{ end }}
+    {{ block "scripts" . }}{{ partialCached "site-scripts.html" . }}{{ end }}
+  </body>
 </html>

@@ -1,0 +1,11 @@
+{
+    "name": "Pasque",
+    "bio": "dolce gaban, cosa cosa cosa, konga, canelone.",
+    "image": "/media/authors/nraboy.png",
+    "weight": 1,
+    "social": {
+        "twitter": "nraboy",
+        "github": "https://www.github.com/nraboy",
+        "website": "https://www.nraboy.com"
+    }
+}

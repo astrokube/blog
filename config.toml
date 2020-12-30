@@ -1,3 +1,79 @@
-baseURL = "http://example.org/"
+baseURL = "https://blog.astrokube.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "AstroKube - developers blog 👩‍💻👨‍💻"
+
+theme = "astro"
+
+copyright = "Astrokube. All rights reserved."
+# sectionPagesMenu = "main"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+
+defaultContentLanguage = "en"
+
+# --------------------
+# [languages.en]
+[languages.en]
+title = "AstroKube - developers blog 👩‍💻👨‍💻"
+weight = 1
+
+[[languages.en.menu.main]]
+url    = "/"
+name   = "Blog"
+weight = 1
+
+[[languages.en.menu.main]]
+url    = "/tags/"
+name   = "Tags"
+weight = 2
+
+[[languages.en.menu.main]]
+url    = "/contact/"
+name   = "Contact"
+weight = 3
+
+# --------------------
+# [languages.es]
+[languages.es]
+title = "AstroKube - blog de desarrolladores 👩‍💻👨‍💻"
+weight = 2
+
+[[languages.es.menu.main]]
+url    = "/es/"
+name   = "Blog"
+weight = 1
+
+[[languages.es.menu.main]]
+url    = "/es/tags/"
+name   = "Etiquetas"
+weight = 2
+
+[[languages.es.menu.main]]
+url    = "/es/contact/"
+name   = "Contacto"
+weight = 3
+
+# --------------------
+# [params]
+[params]
+  logoSRC = "/images/logo.svg"
+  logoURL = "https://astrokube.com/"
+  logoTitle = "AstroKube homepage"
+
+[[params.contactsfooter]]
+name = "email"
+url = "mailto:info@astrokube.com"
+icon = "bi-envelope-fill"
+
+[[params.contactsfooter]]
+name = "twitter"
+url = "https://twitter.com/astrokube"
+icon = "bi-twitter"
+
+[[params.contactsfooter]]
+name = "github"
+url = "https://github.com/astrokube"
+icon = "bi-github"

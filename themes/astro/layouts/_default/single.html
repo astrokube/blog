@@ -1,0 +1,11 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ partial "metadata.html" . }}
+<br><br>
+{{ $author := index .Site.Data.authors (.Params.author | default "default") }}
+{{- if $author -}}
+    {{ $author.name }}
+{{- end -}}
+{{ .Content }}
+{{ end }}
+
