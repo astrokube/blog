@@ -110,3 +110,29 @@ main > .container {
   width: 35px;
   height: 35px;
 }
+
+.navbar-nav {
+  .nav-item {
+    font-size: $h6-font-size;
+  }
+  .active {
+    color: $link-hover-color;
+  }
+  
+}
+
+.ak-navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  & > div {
+    max-width: 800px;
+    margin: auto;
+  }
+  img {
+    width: 170px;
+  }
+}
+
+.ak-mian {
+  padding-top: 3rem;
+}

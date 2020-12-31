@@ -4,7 +4,7 @@
   <body class="d-flex flex-column h-100 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
 
     {{ block "header" . }}{{ partial "header.html" .}}{{ end }}
-    <main class="flex-shrink-0">
+    <main class="ak-mian flex-shrink-0">
       <div class="container">
         {{ block "main" . }}{{ end }}
       </div>

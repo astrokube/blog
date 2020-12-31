@@ -1,14 +1,37 @@
-<div id="nav-border" class="container">
-    <nav id="nav" class="nav justify-content-center">
-        {{ range .Site.Menus.main }}
-        <a class="nav-link" href="{{ .URL }}">
-        {{ if .Pre }}
-        {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
-        {{ $icon }}
-        {{ end }}
-        {{ $text := print .Name | safeHTML }}
-        {{ $text }}
+<nav id="navbar_top" class="navbar-expand-md ak-navbar navbar-light fixed-top bg-white border-bottom border-light-contrast ">
+    <div class="container-fluid d-md-flex justify-content-md-between">
+        <a class="d-inline-block brand" href="{{ .Site.Params.logoURL }}" title="{{ .Site.Params.logoTitle }}">
+            <img src="{{ .Site.Params.logoSRC }}" />
         </a>
-        {{ end }}
-    </nav>
-</div>
+    
+
+        <button class="navbar-toggler border-light-contrast float-end" 
+            type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-md-end pt-2 pt-md-0">
+            <ul class="navbar-nav mb-md-2 mb-md-0">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                <li 
+                    class="nav-item"
+                >
+                    <a class="link d-inline-block pt-2 pb-2 ms-3  pt-md-0 pb-md-0 {{ if or (eq $.URL .URL) ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}" 
+                        href="{{ .URL }}" 
+                        title="{{ .Identifier }}" 
+                    >
+                        {{ $text := print .Name | safeHTML }}
+                        {{ $text }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</nav>

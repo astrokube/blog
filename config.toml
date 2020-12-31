@@ -25,16 +25,19 @@ weight = 1
 url    = "/"
 name   = "Blog"
 weight = 1
+identifier = "home"
 
 [[languages.en.menu.main]]
 url    = "/tags/"
 name   = "Tags"
 weight = 2
+identifier = "tags"
 
 [[languages.en.menu.main]]
 url    = "/contact/"
 name   = "Contact"
 weight = 3
+identifier = "contact"
 
 # --------------------
 # [languages.es]
@@ -46,16 +49,20 @@ weight = 2
 url    = "/es/"
 name   = "Blog"
 weight = 1
+identifier = "home"
 
 [[languages.es.menu.main]]
 url    = "/es/tags/"
 name   = "Etiquetas"
 weight = 2
+identifier = "tags"
 
 [[languages.es.menu.main]]
 url    = "/es/contact/"
 name   = "Contacto"
 weight = 3
+identifier = "contact"
+
 
 # --------------------
 # [params]
