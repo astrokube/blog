@@ -3,12 +3,9 @@ title: "nquiceno author"
 description: nquiceno author description
 date: 2020-12-29T00:05:19+01:00
 draft: true
-author: nquiceno
+author: nquicenob
 tags: [foo]
 ---
-
-## en español
-
 
 
 ## p1

@@ -1,6 +1,7 @@
-{{ $author := index .Site.Data.authors (.Params.author | default "ashishlahoti") }}
+{{ $author := index .Site.Data.authors (.Params.author | default "default") }}
 {{- if $author -}}
-    <div class="meta_item">
-        <span class="meta_text">{{ $author.name }}</span>
+    <div>
+        <img src="{{ $author.image }}" class="avatar-small rounded-circle">
+        <span class="ps-1 fs-6 fw-lighter text-dark">{{ $author.name }}</span>
     </div>
 {{- end -}}

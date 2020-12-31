@@ -1,6 +1,5 @@
 {{ define "main" }}
-  {{ $paginator := .Paginate (where (where .Site.Pages "Section" "in" .Site.Params.mainSections) ".IsSection" false ) .Site.Params.paginate }}
-  {{ range .Paginator.Pages.ByDate.Reverse }}
+  {{ range .Pages.ByDate.Reverse }}
     {{ partial "summary.html" . }}
   {{ end }}
   <div class="d-flex justify-content-center pt-4 pb-4">

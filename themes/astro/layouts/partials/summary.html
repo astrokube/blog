@@ -1,0 +1,19 @@
+<article class="bg-white rounded border border-light-contrast mb-5">
+    <div class="pb-3 ps-3 pe-3 pt-2">
+        <div class="ps-3 pe-3 ps-md-4 pe-md-4 pb-2">
+            <div class="mb-2 mt-3 d-flex flex-row justify-start-between align-items-center">
+                <div class="me-3">
+                    {{ partial "author.html" . }}
+                </div>
+                {{ $dateTime := .PublishDate.Format "2006-01-02" }}
+                {{ $dateFormat := .Site.Params.dateFormat | default  "2006-01-02" }}
+                <time class="align-center me-1 fs-7 fw-lighter text-secondary" datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+            </div>
+            <a href="{{ .RelPermalink }}"><h3 class="mb-3">{{ .Title }}</h3></a>
+        
+            <p class="fs-6 fw-lighter text-secondary">{{ .Summary }}</p>
+            {{ partial "metadata.html" . }}
+        </div>
+    </div>
+</article>
+

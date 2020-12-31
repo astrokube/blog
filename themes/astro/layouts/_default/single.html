@@ -1,11 +1,24 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ partial "metadata.html" . }}
-<br><br>
-{{ $author := index .Site.Data.authors (.Params.author | default "default") }}
-{{- if $author -}}
-    {{ $author.name }}
-{{- end -}}
-{{ .Content }}
+<article class="bg-white rounded border border-light-contrast mb-5">
+    <div class="pb-3 ps-5 pe-5 pt-4">
+        <div class="mb-4 mt-3 d-flex flex-row justify-content-start align-items-center">
+            <div class="me-3">
+                {{ partial "author.html" . }}
+            </div>
+            {{ $dateTime := .PublishDate.Format "2006-01-02" }}
+            {{ $dateFormat := .Site.Params.dateFormat | default  "2006-01-02" }}
+            <time class=" fs-7 fw-lighter text-secondary" datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+        </div>
+        <h1>{{ .Title }}</h1>
+        {{ partial "metadata.html" . }}
+
+        <div class="mt-5 pb-4">
+            {{ .Content }}
+        </div>
+    </div>
+
+</article>
 {{ end }}
+
+
 

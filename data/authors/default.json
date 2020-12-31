@@ -1,11 +1,10 @@
 {
     "name": "astrokube",
     "bio": "astrokube",
-    "image": "/media/authors/nraboy.png",
+    "image": "/images/authors/default.png",
     "weight": 1,
     "social": {
-        "twitter": "nraboy",
-        "github": "https://www.github.com/nraboy",
-        "website": "https://www.nraboy.com"
+        "twitter": "https://twitter.com/astrokube",
+        "github": "https://github.com/astrokube"
     }
 }

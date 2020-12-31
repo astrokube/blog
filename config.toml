@@ -1,9 +1,10 @@
 baseURL = "https://blog.astrokube.com/"
 languageCode = "en-us"
 title = "AstroKube - developers blog 👩‍💻👨‍💻"
-
+relativeURLs           = true
+canonifyUrls           = true
 theme = "astro"
-
+summaryLength = 20
 copyright = "Astrokube. All rights reserved."
 # sectionPagesMenu = "main"
 
@@ -62,6 +63,9 @@ weight = 3
   logoSRC = "/images/logo.svg"
   logoURL = "https://astrokube.com/"
   logoTitle = "AstroKube homepage"
+  body_classes = "bg-light"
+  paginate = 2
+  mainSections = ["post"]
 
 [[params.contactsfooter]]
 name = "email"

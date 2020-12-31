@@ -9,7 +9,7 @@
             <div class="col-12 col-md-6 mb-5 mb-md-3 d-flex align-items-center justify-content-center">
                 <nav class="row row-cols-auto">
                     {{ range .Site.Menus.main }}
-                    <a class="col text-secondary" href="{{ .URL }}">
+                    <a class="col" href="{{ .URL }}">
                     {{ $text := print .Name | safeHTML }}
                     {{ $text }}
                     </a>
@@ -19,7 +19,7 @@
         </div>
         <div class="row row-cols-auto justify-content-center">
             {{ range .Site.Params.contactsfooter }}
-                <a class="col text-secondary" href="{{ .url }}" title="{{ .name }}" target="_blank">
+                <a class="col" href="{{ .url }}" title="{{ .name }}" target="_blank">
                     <i class="bi {{ .icon }}"></i>
                 </a>
             {{ end }}
@@ -28,7 +28,7 @@
             <hr class="d-block" />
         </div>
         <div class="row">
-            <p class="col text-center text-secondary">
+            <p class="col text-center">
                 &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
             </p>
         </div>

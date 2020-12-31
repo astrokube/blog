@@ -1,6 +1,14 @@
 
 // Custom.scss
 
+
+
+// Merge the maps
+
+// Configuration
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
 // colors overwritten
 $blue: #3629db;
 $red: #8a1009;
@@ -16,21 +24,28 @@ $dark: #1d253b;
 
 // new colors
 $primary-contrast: #d32929;
+$light-contrast: $gray-400;
 
 $ak-colors: (
   "primary-contrast": $primary-contrast,
-  "green-light": $green-light
+  "green-light": $green-light,
+  "light-contrast": $light-contrast,
 );
 
 $font-family-sans-serif: 'Ubuntu', sans-serif;
 
-// Merge the maps
+$link-color:                              $blue;
+$link-decoration:                         none;
+$link-hover-color:                        #0088f8;
 
-// Configuration
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
 
 $theme-colors: map-merge($theme-colors, $ak-colors);
+
+$ak-font-sizes: (
+  7: 0.9rem
+);
+
+$font-sizes: map-merge($font-sizes, $ak-font-sizes);
 
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/utilities";
@@ -77,9 +92,21 @@ $theme-colors: map-merge($theme-colors, $ak-colors);
 
 
 .footer {
-  background-color: $gray-500;
+  background-color: $light-contrast;
+  a {
+    color: $gray-700;
+    &:hover {
+      color: $dark;
+    }
+  }
 }
 
 main > .container {
   padding: 60px 15px 0;
+  max-width: 800px;
+}
+
+.avatar-small {
+  width: 35px;
+  height: 35px;
 }
