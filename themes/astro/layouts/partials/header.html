@@ -1,9 +1,12 @@
-<nav id="navbar_top" class="navbar-expand-md ak-navbar navbar-light fixed-top bg-white border-bottom border-light-contrast ">
-    <div class="container-fluid d-md-flex justify-content-md-between">
-        <a class="d-inline-block brand" href="{{ .Site.Params.logoURL }}" title="{{ .Site.Params.logoTitle }}">
-            <img src="{{ .Site.Params.logoSRC }}" />
-        </a>
-    
+<nav id="navbar_top" class="navbar-expand-md ak-navbar navbar-light bg-white border-bottom border-light-contrast ">
+    <div class="border-bottom">
+        <div class="container-fluid d-md-flex pb-3">
+            <a class="d-inline-block brand" href="{{ .Site.Params.logoURL }}" title="{{ .Site.Params.logoTitle }}">
+                <img src="{{ .Site.Params.logoSRC }}" />
+            </a>
+        </div>
+    </div>
+    <div class="container-fluid d-md-flex pt-3">
 
         <button class="navbar-toggler border-light-contrast float-end" 
             type="button" data-bs-toggle="collapse" 
@@ -15,14 +18,14 @@
         </button>
 
 
-        <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-md-end pt-2 pt-md-0">
+        <div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-md-start pt-2 pt-md-0">
             <ul class="navbar-nav mb-md-2 mb-md-0">
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
                 <li 
                     class="nav-item"
                 >
-                    <a class="link d-inline-block pt-2 pb-2 ms-3  pt-md-0 pb-md-0 {{ if or (eq $.URL .URL) ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}" 
+                    <a class="link d-inline-block pt-2 pb-2 me-3  pt-md-0 pb-md-0 {{ if or (eq $.URL .URL) ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}" 
                         href="{{ .URL }}" 
                         title="{{ .Identifier }}" 
                     >

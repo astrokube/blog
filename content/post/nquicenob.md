@@ -22,3 +22,8 @@ Pellentesque erat ex, interdum quis consectetur nec, sagittis eu ex. Phasellus m
 
 ## p5
 Curabitur ac metus eu mauris semper maximus. Nulla quis tellus vitae arcu ullamcorper pharetra. Fusce nunc leo, scelerisque a mi at, gravida pretium sapien. Praesent non magna tortor. Aenean ornare aliquam convallis. Integer ultrices eleifend ipsum, a interdum ante porttitor vehicula. Ut maximus mollis nunc et tempus. Donec luctus elit ut mauris consequat commodo. Ut consequat eget eros ac fringilla. Duis eget ipsum tempor, auctor dolor eu, accumsan sapien. Cras ac accumsan ligula, et semper justo. Pellentesque eleifend tristique magna, a dictum massa tristique a. Pellentesque et facilisis neque, nec ultrices augue. 
+
+```js
+const a = "aaaaa";
+console.log(a);
+```

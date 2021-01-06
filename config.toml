@@ -88,3 +88,7 @@ icon = "bi-twitter"
 name = "github"
 url = "https://github.com/astrokube"
 icon = "bi-github"
+
+[markup]
+  [markup.highlight]
+    style = "arduino"

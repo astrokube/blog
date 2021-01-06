@@ -102,7 +102,10 @@ $font-sizes: map-merge($font-sizes, $ak-font-sizes);
 }
 
 main > .container {
-  padding: 60px 15px 0;
+  // padding: 60px 15px 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0;
   max-width: 800px;
 }
 
@@ -123,8 +126,8 @@ main > .container {
 
 .ak-navbar {
   padding-top: 20px;
-  padding-bottom: 20px;
-  & > div {
+  padding-bottom: 10px;
+  & .container-fluid {
     max-width: 800px;
     margin: auto;
   }
@@ -134,5 +137,5 @@ main > .container {
 }
 
 .ak-mian {
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
