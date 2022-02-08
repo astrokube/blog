@@ -37,7 +37,7 @@ We’ll give you an overview of each CSF category and how we can translate them 
 ## Identify
 You can’t protect what you don’t know, that’s why visibility is key in every organization: it’s the foundation of every successful security strategy. This function of the framework focuses on identifying all potential risks a business is facing, ranging from asset management to risk management, including business environment, governance and risk assessment.
 
-Regarding asset management, since virtualization took off a decade or more ago, visibility has been a problem: how could you protect hosts that run inside others, that abstract, and make operational activities like orchestration transparent, hosts where part of the infrastructure is ephemeral by nature?
+Regarding asset management, since virtualization took off a decade or more ago, visibility has been a problem: how could you protect hosts that run inside others, that abstract, and make operational activities like orchestration transparent? how to protect hosts where part of the infrastructure is ephemeral by nature?
 
 This has been a tricky question to answer, and there still isn’t a single solution: it really depends on your tech stack as to how you correctly enumerate all your assets.
 
@@ -100,7 +100,7 @@ Applications have become more and more complex and dynamic: there is now an ecos
 
 In such an environment, control can go only so far. You need a consistent and thorough detection and response capability: while the source of the breach may go undetected, as it interacts with the compromised systems, a trail of actions will always be generated, and that’s when detection kicks in.
 
-Several researches (link to) have quantified not only how long it takes on average to identify a breach, but also how much it costs.
+Several researches have quantified not only how long it takes on average to identify a breach, but also how much it costs.
 It’s then key to detect the breach as soon as possible, not only to minimize the scope and impact of the event but also to minimize costs.
 
 The challenges faced when implementing a detection and response strategy are multiple, and they’re strictly with the logging strategy built around the product: being able to answer the `who what when how` question will give the right information to spot and respond to suspicious activity.
@@ -155,7 +155,7 @@ Finally, let’s look at how security is embedded in DevOps process:
 
 ![](/images/security_strategy/last.png "DevSecOps initiative")
 
-49% say they’re starting, or have already started their devsecops journey, while 26% report disconnection between sec and DevOps. This means: if you’re in that 49%, Congrats! The first step is fundamental and the more you keep going the more you’ll grow, to end up eventually in that 25% with an advanced state.
+49% say they’re starting, or have already started their DevSecOps journey, while 26% report disconnection between Sec and DevOps. This means: if you’re in that 49%, Congrats! The first step is fundamental and the more you keep going the more you’ll grow, to end up eventually in that 25% with an advanced state.
 If you’re in the 26% range, you may want to start thinking seriously about it, or you risk being left behind.
 
 Whether you’re in the 28, 49 or 25 percent Astrokube will lead you on the path towards a stronger, more consistent container security strategy.
