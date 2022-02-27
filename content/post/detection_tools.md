@@ -7,6 +7,8 @@ author: Davide Barbato
 tags: [security]
 ---
 
+As we discussed in the Detection and Response section of our previous article [Towards a holistic approach to container security: a strategy](https://www.astrokube.com/post/towards-a-holistic-approach-to-container-security-a-strategy), runtime threat detection and response is top security concerns for container-based workloads.
+
 Security preventive measures are the foundation of any decent security program, and if you have been in the game enough, you know that solely they aren't sufficient to avoid a security breach: since absolute, perfect security doesn't exist (unless an heavy toll is payed on usability and accessibility), the goal of the game is to increase the cost for a malicious actor to gain access to your crown jewels.
 
 While protections can and will be bypassed, once they get access to your systems, their activity will inevitably leave some traces: that's where detection comes into play to back-up your security controls by alerting on suspicious activity and giving the opportunity to respond in a timely manner and limit the impact of a security breach.
